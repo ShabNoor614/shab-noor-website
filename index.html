@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shab Noor Rajpoot | Official Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+        }
+
+        header {
+            background-color: #080808;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+
+      nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+        .hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        radial-gradient(circle at center, #242424 0%, #0d0d0d 55%, #050505 100%);
+}
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+   .hero h1 {
+    font-size: 60px;
+    margin-bottom: 18px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    text-shadow: 0 0 25px rgba(255,255,255,0.18);
+}
+.hero p {
+    color: #b8b8b8;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+}
+
+  .button {
+    display: inline-block;
+    padding: 14px 34px;
+    border: 1px solid #666;
+    color: #f5f5f5;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    background: linear-gradient(145deg, #181818, #0c0c0c);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: 0.35s ease;
+}
+
+.button:hover {
+    background: #f5f5f5;
+    color: #0d0d0d;
+    border-color: #f5f5f5;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(255,255,255,0.12);
+}
+
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+    section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-shadow: 0 0 18px rgba(255,255,255,0.12);
+}
+section p {
+    color: #b5b5b5;
+    font-size: 17px;
+    line-height: 2;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}.novel {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 45px 40px;
+    border: 1px solid #333;
+    background: linear-gradient(145deg, #161616, #090909);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.55);
+    transition: 0.35s ease;
+}
+
+.novel:hover {
+    transform: translateY(-6px);
+    border-color: #666;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.65);
+}
+.novel h3 {
+    font-size: 30px;
+    margin-bottom: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.novel p {
+    color: #b5b5b5;
+    line-height: 2;
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+       footer {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #080808;
+    color: #777;
+    border-top: 1px solid #2a2a2a;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.author-image {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    border: 2px solid #555;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+}
+.welcome-text {
+    color: #999;
+    font-size: 17px;
+    line-height: 2;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    letter-spacing: 0.5px;
+}
+.about-card {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px 40px;
+    background: linear-gradient(145deg, #151515, #0b0b0b);
+    border: 1px solid #333;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+}
+.contact-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 45px 40px;
+    background: linear-gradient(145deg, #151515, #0b0b0b);
+    border: 1px solid #333;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+}
+
+.contact-email {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.contact-email:hover {
+    color: white;
+    border-color: white;
+}
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .author-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .novel {
+        padding: 25px 20px;
+   
+}
+.novel-cover {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+    .about-card,
+    .contact-card {
+        padding: 30px 20px;
+    }
+
+}
+.novel-cover {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            SHAB NOOR RAJPOOT
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#novels">Novels</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+
+<img src="author.jfif" alt="Shab Noor Rajpoot" class="author-image">
+        <h1>Shab Noor Rajpoot</h1>
+
+       
+            <p>
+                Writer • Storyteller • Dreamer
+            </p>
+
+            <p class="welcome-text">
+    Welcome to my official website,
+    where stories turn into memories
+    and words become emotions.
+</p>
+            <a href="#novels" class="button">
+                Explore My Novels
+            </a>
+
+        </div>
+
+    </section>
+
+
+   <section id="novels">
+
+    <h2>My Novels</h2>
+
+    <p>
+        Explore my stories and enter the worlds created through words,
+        emotions and imagination.
+    </p>
+
+    <div class="novel">
+
+        <img src="cover.jpg.png" alt="وقت جو ٹھہر نہ سکا" class="novel-cover">
+<h3>وقت جو ٹھہر نہ سکا</h3>
+
+        <p>
+            ایک ایسی محبت کی داستان،
+            جو وقت کے ساتھ ختم نہیں ہوئی،
+            مگر وقت اسے مکمل ہونے کا موقع بھی نہ دے سکا۔
+        </p>
+
+        <br>
+
+        <a href="novel.html" class="button">
+            Read Novel
+        </a>
+
+    </div>
+
+</section>
+
+    
+<section id="about">
+<div class="about-card">
+
+    <h2>About The Author</h2>
+
+    <p>
+        Shab Noor Rajpoot is a writer and storyteller
+        who believes that every heart carries a story
+        waiting to be written.
+    </p>
+
+    <p>
+        Her writing explores love, emotions, relationships,
+        dreams and the quiet moments that often remain
+        unspoken. Through her stories, she hopes to create
+        characters and moments that readers can feel,
+        remember and carry with them.
+    </p>
+
+    <p>
+        Writing is not just about telling a story for her;
+        it is about giving emotions a voice and turning
+        feelings into words.
+    </p>
+.about-card {
+
+</div>
+
+</section>
+
+<section id="contact">
+
+    <div class="contact-card">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            For collaborations, writing opportunities, feedback,
+            or any other inquiries, feel free to reach out.
+        </p>
+
+        <a href="mailto:shabnoor8690@gmail.com" class="contact-email">
+            shabnoor8690@gmail.com
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Shab Noor Rajpoot. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
