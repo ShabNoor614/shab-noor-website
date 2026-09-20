@@ -272,7 +272,42 @@ section p {
     height: auto;
     margin: 0 auto 30px;
 }
-    </style>
+.privacy-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #777;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: #fff;
+}
+ .copyright-notice {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #555;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}  
+.upcoming-card {
+    opacity: 0.85;
+    border-style: dashed;
+}
+
+.upcoming-card h3 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.upcoming-card p {
+    color: #888;
+}
+ </style>
 </head>
 
 <body>
@@ -286,6 +321,8 @@ section p {
         <nav>
             <a href="#home">Home</a>
             <a href="#novels">Novels</a>
+             <a href="#upcoming">Upcoming</a>
+<a href="#author-note">Author's Note</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -308,6 +345,7 @@ section p {
     where stories turn into memories
     and words become emotions.
 </p>
+      <p class="hero-quote">ہر کہانی صرف پڑھی نہیں جاتی، کچھ کہانیاں محسوس کی جاتی ہیں۔</p>
             <a href="#novels" class="button">
                 Explore My Novels
             </a>
@@ -347,7 +385,58 @@ section p {
 
 </section>
 
-    
+    <section id="author-note">
+
+    <div class="about-card">
+
+        <h2>A Note From The Author</h2>
+
+        <p>
+            کچھ کہانیاں صرف لکھی نہیں جاتیں،
+            انہیں محسوس کیا جاتا ہے۔
+        </p>
+
+        <p>
+            میری کوشش ہے کہ میری ہر کہانی کے کردار،
+            ان کے احساسات اور ان کی خاموشیاں
+            قارئین کے دل تک پہنچیں۔
+        </p>
+
+        <p>
+            اگر میری کوئی کہانی آپ کو اپنے کسی احساس،
+            کسی یاد یا کسی خاموش لمحے کی یاد دلا دے،
+            تو میرے لیے یہی اس تحریر کی سب سے خوبصورت کامیابی ہے۔
+        </p>
+
+        <p>
+            محبت، جدائی اور وقت کے درمیان چھپی ہوئی
+            ان کہانیوں کو پڑھنے کے لیے شکریہ۔
+        </p>
+
+    </div>
+
+</section>
+<section id="upcoming">
+
+    <h2>Upcoming Novels</h2>
+
+    <p>
+        New stories are on their way.
+        Stay connected for upcoming books and writing projects.
+    </p>
+
+    <div class="novel upcoming-card">
+
+        <h3>Coming Soon</h3>
+
+        <p>
+            A new story is currently taking shape.
+            More details will be revealed soon.
+        </p>
+
+    </div>
+
+</section>
 <section id="about">
 <div class="about-card">
 
@@ -372,7 +461,7 @@ section p {
         it is about giving emotions a voice and turning
         feelings into words.
     </p>
-.about-card {
+
 
 </div>
 
@@ -400,7 +489,14 @@ section p {
 <footer>
 
     © 2026 Shab Noor Rajpoot. All Rights Reserved.
-
+<p class="copyright-notice">
+    All written content, novels, stories and original work on this website
+    are the property of Shab Noor Rajpoot. Unauthorized copying or
+    reproduction is not permitted.
+</p>
+<a href="privacy.html" class="privacy-link">
+    Privacy Policy
+</a>
 </footer>
 
 </body>
